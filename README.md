@@ -8,7 +8,7 @@ Sample system in Sesam:
   "docker": {
     "environment": {
       "GOOGLE_APPLICATION_CREDENTIALS": "credentials.json",
-      "GOOGLE_APPLICATION_CREDENTIALS_CONTENT": { Pase your Credentials from GCP
+      "GOOGLE_APPLICATION_CREDENTIALS_CONTENT": { Insert your Credentials from GCP
       },
       "PAYLOAD_KEY": "<optional attribute which part of entity send as payload (if you don't want to pass whole entity)>",
       "PROJECT_ID": "<project id>"
