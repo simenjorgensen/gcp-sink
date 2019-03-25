@@ -33,7 +33,7 @@ def process():
     :param topic_name: name of topic to publish messages to
     :return:
     """
-    topic_name = "hafslund"
+    topic_name = "<topic_id>"
 
     publisher = pubsub_v1.PublisherClient()
     topic_path = publisher.topic_path(PROJECT_ID, topic_name)
