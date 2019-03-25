@@ -18,9 +18,11 @@ Sample system in Sesam:
   },
   "verify_ssl": true
 }
+```
 
 
 Sample output pipe:
+```json
 {
   "_id": "customer-meter-endpoint",
   "type": "pipe",
@@ -37,4 +39,4 @@ Sample output pipe:
     "cron_expression": "0 0 1 1 ?"
   }
 }
-
+```
