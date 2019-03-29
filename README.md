@@ -24,11 +24,11 @@ Sample system in Sesam:
 Sample output pipe:
 ```json
 {
-  "_id": "customer-meter-endpoint",
+  "_id": "target-endpoint",
   "type": "pipe",
   "source": {
     "type": "dataset",
-    "dataset": "customer-meters"
+    "dataset": "enriched-data"
   },
   "sink": {
     "type": "json",
