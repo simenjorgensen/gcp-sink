@@ -26,7 +26,7 @@ if CREDENTIALS:
     with open(CREDENTIALS_PATH, "wb") as out_file:
         out_file.write(CREDENTIALS.encode())
 
-@APP.route("/hafslund", methods=['POST'])
+@APP.route("/<topic_id>", methods=['POST'])
 def process():
     """
     Endpoint to publish messages to GCP pubsub
@@ -50,8 +50,8 @@ def process():
             logging.debug("data to be sent: {}".format(data))
             try:
                 future = publisher.publish(topic_path, data=data)
-                output_entity['result'] = future.result()
-                logging.info("SUCCESS: {}".format(output_entity))
+                #output_entity['result'] = future.result()
+                #logging.info("SUCCESS: {}".format(output_entity))
             except Exception as e:
                 logging.error(e)
                 output_entity['result'] = "ERROR: {}".format(str(e))
