@@ -1,5 +1,18 @@
 Publish entities to GCP Pub/Sub
 
+Set up google cloud
+- Go to **[cloud.google.com](cloud.google.com)** and create your google account if you don’t already have one.
+- Go to the console and create a **project**.
+- Create a **service account** for your project (found under “IAM and admin” or by searching).
+    - Create a key for your service account as you create the account. Choose JSON file format and name it "credentials.json"
+- Go to **Pub/Sub* and create a topic.
+- Create a **subscription** to your new topic.
+- Create a **bucket** in (found under “Storage).
+- Create a **dataset** and a **table** in BigQuery with a schema that fit your data.
+- Create a **DataFlow from template** "Cloud Pub/Sub to BigQuery".
+Once the DataFlow Job is running you can start the pushing data from the endpoint in Sesam
+
+
 Sample system in Sesam:
 ```json
 {
