@@ -13,7 +13,7 @@ Set up google cloud
 Once the DataFlow Job is running you can start the pushing data from the endpoint in Sesam
 
 Setting up in Sesam.
-If you need help go to our [Getting started with Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started) page.
+If you need help go to our **microservice** section of the [Getting started with Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started) page.
 
 Sample system in Sesam:
 ```json
